@@ -149,6 +149,27 @@ install-notes-windows-description =
           Windows-specific <code>rustup</code> documentation</a>.
         </p>
 
+install-notes-windows-devconfig-heading = Optional Windows Developer Config setup
+install-notes-windows-devconfig-description =
+        <p>
+          Microsoft's
+          <a href="https://github.com/microsoft/WindowsDeveloperConfig/blob/main/src/windows-dev-config/workloads.md">
+          Windows Developer Config Rust workload</a>
+          is an optional third-party setup, not a Rust project recommendation.
+          It installs PowerShell 7, <code>rustup</code>, the stable Rust toolchain,
+          and Visual Studio Community 2026 with the C++ workload, MSVC build
+          tools, and Windows 11 SDK. Choose only the Rust workload rather than
+          the full workstation setup.
+        </p>
+        <p>
+          Review the scripts, packages, and license terms before running them.
+          Setup requests administrator privileges and may require a restart.
+          Visual Studio Community licensing may not suit all organizations;
+          consult the MSVC prerequisites above for alternatives.
+          Installing Rust directly with <code>rustup</code> as described above
+          remains the recommended approach.
+        </p>
+
 install-other-methods-heading = Other installation methods
 install-other-methods-description = The installation described above, via
         <code>rustup</code>, is the preferred way to install Rust for most
